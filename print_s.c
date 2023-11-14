@@ -3,9 +3,10 @@
 /**
  * printStrings - prints a string followed by a new line
  * @str: pointer to a string
- */
+ * Return: 0 on succcess 
+*/
 
-void printStrings(va_list, str)
+int printStrings(va_list, str)
 {
 	char *string
 	int i = 0;
@@ -17,4 +18,5 @@ void printStrings(va_list, str)
 		i++;
 	}
 	_putchar('\n');
+	return (0);
 }
