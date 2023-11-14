@@ -10,7 +10,7 @@ int printCharacters(va_list, charac)
 {
 	char character;
 
-	character = va_args(charac, int);
+	character = va_arg(charac, int);
 	_putchar(character);
 
 	return (0);
