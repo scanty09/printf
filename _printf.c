@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include "main.h"
 
 /**
  * _printf - clone of printf
@@ -9,7 +10,7 @@
  */
 
 
-int _printf(const char format, ...)
+int _printf(const char *format, ...)
 {
 	int count = 0;
 	va_list args;
