@@ -1,11 +1,13 @@
 #ifndef MAIN_H
-1;95;0c#define MAIN_H
+#define MAIN_H
+
+#include <stdlib.h>
+#include <stdarg.h>
+#include <unistd.h>
 
 /* function protypes */
 int _printf(const char *format, ...);
 int _putchar(char c);
-int printCharacters(va_list, charac);
-int printStrings(va_list, str);
-int _strlen(char *s);
-int printPercent(void);
+int _puts(char *s);
+
 #endif /* MAIN_H*/
