@@ -23,18 +23,23 @@ int _printf(const char *format, ...)
 		{
 			_putchar(va_arg(args, int));
 			i++;
+			count++;
 		}
 		else if (format[i] == '%' && format[i + 1] == 's')
 		{
 			count_string = _puts(va_arg(args, char *));
 			i++;
-			count += count_string - 1;
+			count += count_string;
 		}
 		else if (format[i + 1] == '%')
 		{
 			_putchar('%');
+			count++;
 		}
-		count++;
+		else if (format[i] == '%' && format[i + 1] == 'r')
+		{
+			_putchar('%');
+		}
 	}
 	va_end(args);
 	return (count);
